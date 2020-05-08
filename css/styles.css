@@ -5,9 +5,10 @@
   overflow-x: hidden;
 }
 
-.figura img{
+.figura img {
   position: absolute;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .logo {
@@ -44,10 +45,13 @@
 
 .content-main {
   position: absolute;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   width: 85%;
-  margin-top: 150px; 
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas: 
+    "presentacion banner";
+  justify-content: space-between;
+  padding-top: 120px;
 }
 
 .presentacion {
@@ -71,7 +75,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
+  /*width: 180px;*/
   height: 45px;
   background-color: #02212b;
   border: 2px solid #fff;
@@ -93,7 +97,7 @@
 
 .redes {
   display: flex;
-  position: absolute;
+  position: fixed;
   justify-content: space-around;
   align-items: center;
   width: 380px;
@@ -101,7 +105,7 @@
   background-color: #fff;
   box-shadow: 0px 8px 8px rgba(168, 168, 168, 0.1), 0px 4px 4px rgba(152, 152, 152, 0.2);
   border-radius: 8px;
-  top: 620px;
+  bottom: 15px;
 }
 
 .gitlab img,
@@ -111,106 +115,15 @@
   width: 28px;
 }
 
-@media screen and (max-width: 1024px) {
-  .figura img{
-    width: 120%;
-  }
-  
-  .redes {
-    top: 700px;
-  }
-}
+/*-----------Responsive Design---------*/
 
 @media screen and (max-width: 768px) {
-  .figura img{
-    width: 185%;
-  }
-  
-  .presentacion h1 {
-    font-size: 30px;
-  }
-  
-  .presentacion p {
-    font-size: 22;
-  }
-  
-  .portafolio-btn {
-    margin-top: 110px;
-  }
-  
   .banner img {
-    margin-top: 15px;
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
   }
-  
-  .redes {
-    top: 600px;
-  }
-}
 
-@media screen and (max-width: 480px) {
-  .figura img{
-    width: 245%;
-    margin-left: -35px;
-  }
-  
-  .presentacion {
-    width: 50%; 
-  }
-  
-  .presentacion h1 {
-    font-size: 25px;
-  }
-  
-  .presentacion p {
-    font-size: 18px;
-    width: 100%;
-  }
-  
   .portafolio-btn {
-    margin-top: 55px;
-    width: 110px;
-    height: 35px;
-  }
-  
-  .portafolio-btn a {
-    font-size: 16px
-  }
-  
-  .redes {
-    top: 500px;
-  }
-  
-  .banner img {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .logo p {
-    font-size: 20px;
-  }
-    
-  .nav-menu ol li a{
-    font-size: 16px;
-    padding: 0 0 0 20px;
-  }
-  
-  .content-main {
-    justify-content: center;
-  }
-  
-  .banner {
-    display: none;
-  }
-  
-  .presentacion {
-    width: 100%;
-  }
-  
-  .redes {
-    width: 250px;
+    margin-top: 60px;
   }
 }
