@@ -1,111 +1,117 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: 'Red Hat Display', sans-serif;
-  overflow-x: hidden;
 }
 
 .figura img {
+  display: none;
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
-.logo {
+/*-----## Navegation ##-----*/
+.navegation {
+  position: fixed;
+  width: 100vw;
+  background-color: #09262f;
+  z-index: 1;
+  box-shadow: 0px 8px 8px rgba(2, 33, 43, 0.1), 0px 4px 4px rgba(2, 33, 43, 0.2);
+}
+
+.nav-content {
+  display: flex;
+  padding: 15px 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo p {
   color: #fff;
   font-size: 25px;
   border-bottom: 1px solid #fff;
 }
 
-.main {
-  display: flex;
-  justify-content: center;
+.nav-menu span {
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-.nav{
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  width: 85%;
-  height: 60px;
-  align-items: center;
+.nav-menu ul {
+  display: none;
+  list-style: none;
 }
 
-.nav-menu ol {
-  display: flex;
-}
-
-.nav-menu ol li a{
+.nav-menu ul li a {
+  text-decoration: none;
+  margin-right: 20px;
   font-size: 18px;
   font-weight: 600;
   color: #fff;
-  padding: 0 0 0 40px;
-  text-decoration: none;
 }
 
-.content-main {
-  position: absolute;
-  display: grid;
-  width: 85%;
-  grid-template-columns: repeat(2, auto);
-  grid-template-areas: 
-    "presentacion banner";
-  justify-content: space-between;
-  padding-top: 120px;
+/*-----## Section main ##-----*/
+.main {
+  display: block;
+  padding: 80px 15px;
+  background-color: #09262f;
+  position: relative;
 }
 
-.presentacion {
-  margin-top: 20px;
+.presentation {
+  padding-top: 60px;
+  width: 100%;
 }
 
-.presentacion h1 {
-  font-size: 35px;
-  font-weight: 800;
+.presentation h1 {
   color: #fff;
+  font-size: 30px;
+  font-weight: 900;
 }
 
-.presentacion p {
-  margin-top: 25px;
+.presentation p {
   color: #fff;
-  width: 300px;
-  font-size: 22px;
-}
-
-.portafolio-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /*width: 180px;*/
-  height: 45px;
-  background-color: #02212b;
-  border: 2px solid #fff;
-  border-radius: 8px;
-  margin-top: 145px;
-  cursor: pointer;
-}
-
-.portafolio-btn a {
+  padding-top: 25px;
   font-size: 20px;
+  width: 100%;
+}
+
+.btn-portafolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  height: 40px;
+  background-color: #02212b;
+  margin-top: 145px;
+  border: 1px solid #fff;
+  box-shadow: 0px 8px 8px rgba(168, 168, 168, 0.1), 0px 4px 4px rgba(152, 152, 152, 0.2);
+}
+
+.btn-portafolio a {
+  font-size: 22px;
   color: #fff;
   text-decoration: none;
 }
-
-.banner img {
-  width: 400px;
-  height: 400px;
+/*-----## Nav networks fixed ##-----*/
+.networks {
+  display: flex;
+  justify-content: center;
 }
 
-.redes {
-  display: flex;
+.networks-card {
+  background-color: #fff;
   position: fixed;
+  display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 380px;
+  width: 95%;
   height: 55px;
-  background-color: #fff;
-  box-shadow: 0px 8px 8px rgba(168, 168, 168, 0.1), 0px 4px 4px rgba(152, 152, 152, 0.2);
+  box-shadow: 0px 8px 8px rgba(2, 33, 43, 0.1), 0px 4px 4px rgba(152, 152, 152, 0.2);
   border-radius: 8px;
-  bottom: 15px;
+  bottom: 12px;
 }
 
 .gitlab img,
@@ -115,15 +121,187 @@
   width: 28px;
 }
 
-/*-----------Responsive Design---------*/
+/*-----## Section skills ##-----*/
 
-@media screen and (max-width: 768px) {
-  .banner img {
-    width: 300px;
-    height: 300px;
+.skills {
+  padding: 50px 15px;
+}
+
+.skills h1{
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.content-skills {
+  display: block;
+  padding-top: 50px;
+}
+
+.skill-card {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 50px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(2, 33, 42, 0.1), 0px 4px 12px rgba(2, 33, 42, 0.2);
+}
+
+.skill-card h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skill-card_content {
+  padding: 15px;
+}
+
+.skill-tech {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.loader {
+  border: 1.5px solid #09262f;
+  border-radius: 8px;
+  height: 12px;
+}
+
+.loader-intern {
+  background-color: skyblue;
+  border-radius: 8px;
+  width: 80%;
+  height: 12px;
+}
+
+/*-----## Section footer ##-----*/
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  justify-content: space-between;
+  background-color: #09262f;
+  padding: 50px 15px;
+}
+
+.menu, .otros {
+  padding: 15px;
+}
+
+.menu ul li, .otros ul li {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.menu ul li a {
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.otros ul li a {
+  color: #fff;
+}
+
+/*-----## Responsive Design ##-----*/
+@media screen and (min-width: 768px) {
+  .figura img {
+    display: block;
+    position: absolute;
+    height: 650px;
+  }
+  
+/*-----## Navegation ##-----*/
+  .nav-menu_btn {
+    display: none;
+  }
+  
+  .nav-menu ul {
+    display: flex;
   }
 
-  .portafolio-btn {
-    margin-top: 60px;
+/*-----## Section Main ##-----*/
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-column-gap: 15px;
+    grid-template-areas: 
+    "presentacion banner";
+    justify-content: space-between;
+    padding: 80px 25px;
+    position: relative;
+    background-color: inherit; 
+  }
+
+  .presentation h1{
+    font-size: 35px;
+  }
+
+  .banner img{
+    display: block;
+    position: relative;
+    padding-top: 60px;
+    width: 100%;
+  }
+
+/*-----## Section Skills ##-----*/
+  .content-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-column-gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+/*-----## Nav networks fixed ##-----*/
+  .networks-card {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .figura img {
+    height: 100vh;
+  }
+  
+/*-----## Navegation ##-----*/
+  .nav-content {
+    padding: 15px 80px;
+  }
+
+/*-----## Section Main ##-----*/
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-column-gap: 80px;
+    grid-template-areas: 
+    "presentacion banner";
+    justify-content: space-between;
+    padding: 80px;
+  }
+
+/*-----## Section Skills ##-----*/
+  .content-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 380px);
+    grid-column-gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 80px 0 80px;
+  }
+
+/*-----## Nav networks fixed ##-----*/
+  .networks-card {
+    width: 380px;
+  }
+
+/*-----## Section footer ##-----*/
+  footer {
+    padding: 50px 80px;
   }
 }
