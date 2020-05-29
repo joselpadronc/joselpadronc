@@ -269,10 +269,6 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-  .figura img {
-    height: 100vh;
-  }
-  
 /*-----## Navegation ##-----*/
   .nav-content {
     padding: 15px 80px;
@@ -287,6 +283,10 @@ footer {
     "presentacion banner";
     justify-content: space-between;
     padding: 80px;
+  }
+
+  .banner img {
+    width: 100%;
   }
 
 /*-----## Section Skills ##-----*/
@@ -306,6 +306,6 @@ footer {
 
 /*-----## Section footer ##-----*/
   footer {
-    padding: 50px 80px;
+    padding: 20px 80px;
   }
 }
