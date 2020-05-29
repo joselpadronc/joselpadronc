@@ -95,6 +95,10 @@
   color: #fff;
   text-decoration: none;
 }
+
+.banner img{
+  display: none;
+}
 /*-----## Nav networks fixed ##-----*/
 .networks {
   display: flex;
