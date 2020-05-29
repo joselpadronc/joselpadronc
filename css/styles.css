@@ -170,7 +170,7 @@
 }
 
 .loader {
-  border: 1.5px solid #09262f;
+  border: 1px solid #09262f;
   border-radius: 8px;
   height: 12px;
 }
@@ -180,6 +180,41 @@
   border-radius: 8px;
   width: 80%;
   height: 12px;
+}
+
+.html,
+.css {
+  width: 98%;
+}
+
+.js {
+  width: 20%;
+}
+
+.flask,
+.django {
+  width: 80%;
+}
+
+.ts,
+.angular,
+.node,
+.ruby,
+.go {
+  display: flex;
+  align-items: center;
+  width: 0%;
+}
+
+.ts p,
+.angular p,
+.node p,
+.ruby p,
+.go p {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px;
+  letter-spacing: 1px;
 }
 
 /*-----## Section footer ##-----*/
