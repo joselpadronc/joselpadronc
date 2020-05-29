@@ -144,10 +144,9 @@
 
 .skill-card {
   width: 100%;
-  height: 300px;
+  height: auto;
   margin-bottom: 50px;
   background-color: #fff;
-  border: 1px solid black;
   border-radius: 8px;
   box-shadow: 0px 0px 15px rgba(2, 33, 42, 0.1), 0px 4px 12px rgba(2, 33, 42, 0.2);
 }
@@ -155,6 +154,7 @@
 .skill-card h4 {
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 15px;
 }
 
 .skill-card_content {
@@ -176,7 +176,7 @@
 }
 
 .loader-intern {
-  background-color: skyblue;
+  background-color: #0a8ecd;
   border-radius: 8px;
   width: 80%;
   height: 12px;
