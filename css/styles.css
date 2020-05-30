@@ -5,10 +5,10 @@
 }
 
 .figura img {
-  display: none;
+  display: block;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 600px;
 }
 
 /*-----## Navegation ##-----*/
@@ -52,11 +52,15 @@
   color: #fff;
 }
 
+.nav-menu_items.is-active {
+  left: 0;
+}
+
 /*-----## Section main ##-----*/
 .main {
   display: block;
   padding: 80px 15px;
-  background-color: #09262f;
+  /*background-color: #09262f;*/
   position: relative;
 }
 
@@ -342,5 +346,15 @@ footer {
 /*-----## Section footer ##-----*/
   footer {
     padding: 20px 80px;
+  }
+}
+
+@media screen and (min-width: 2160px) {
+  .main,
+  .content-skills, footer {
+    padding: 80px 400px;
+  }
+  .nav-content {
+    padding: 15px 400px;
   }
 }
