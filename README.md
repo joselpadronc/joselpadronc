@@ -10,3 +10,6 @@ My personal website.
 - CSS
 - JavaScript
 - Python with Flask
+
+
+**Designed and developed by José Padrón**
