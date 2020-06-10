@@ -58,6 +58,12 @@ body {
 	padding: 15px;
 }
 
+.projects-card_content {
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+
 
 /*-----## Responsive Design ##-----*/
 @media screen and (min-width: 768px) {

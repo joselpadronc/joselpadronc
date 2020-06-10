@@ -1,0 +1,15 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #02212b;
+}
