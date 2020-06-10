@@ -100,7 +100,7 @@ body {
 	/*-----## Section Projects ##-----*/
 	.projects {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(5, 1fr);
 		grid-gap: 25px;
  		padding: 15px 400px 45px 400px;
 	}
