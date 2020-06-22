@@ -11,5 +11,95 @@ html {
 }
 
 body {
-  background-color: #02212b;
+  background-color: #f3f8fb;
+}
+
+/*-----## Back Botton ##-----*/
+.back-btn a {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+ 	padding: 100px 15px 15px 15px;
+ 	background-color: #f3f8fb;
+ 	font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.back-btn a img {
+	margin-right: 10px;
+}
+
+/*-----## BlogPosts section ##-----*/
+.blogposts {
+  display: block;
+  padding: 15px 15px 45px 15px;
+}
+
+.blogposts-card {
+  background-color: #fff;
+	border-radius: 8px;
+  margin-top: 15px;
+  padding: 15px;
+  box-shadow: 0px 8px 8px rgba(2, 33, 43, 0.1), 0px 4px 4px rgba(152, 152, 152, 0.2);
+}
+
+.blogposts-card h1,
+.blogposts-card p  {
+  padding: 15px 0px;
+}
+
+.blogpost-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  margin: 15px 0px;
+  height: 40px;
+  background-color: #f3f8fb;
+  border: 1px solid skyblue;
+  border-radius: 8px;
+}
+
+/*-----## Responsive Design ##-----*/
+@media screen and (min-width: 768px) {
+  /*-----## BlogPosts section ##-----*/
+	.blogposts {
+ 		padding: 15px 100px 45px 100px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  /*-----## Back btn ##-----*/
+  .back-btn a {
+	 	padding: 100px 80px 15px 90px;
+  }
+
+  /*-----## BlogPosts section ##-----*/
+	.blogposts {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 85px;
+     margin-top: 0px;
+  }
+
+}
+
+@media screen and (min-width: 2160px) {
+  /*-----## Back Botton ##-----*/
+.back-btn a {
+   padding: 100px 400px 15px 400px;
+}
+
+/*-----## BlogPosts section ##-----*/
+.blogposts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  padding: 15px 400px 45px 400px;
+}
 }
