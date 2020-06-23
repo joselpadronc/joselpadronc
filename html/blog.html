@@ -29,7 +29,7 @@
             <a href="blog.html">Blog</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#" class="modal-contact" >Contact</a>
           </li>
         </ul>
       </div>
@@ -43,6 +43,32 @@
       Blog
     </a>
   </section>
+
+  <!--- ## Modal contact ## --->
+  <div class="modal-overley">
+    <div class="modal">
+      <div class="modal-title">
+        <h1>Contact me</h1>
+        <div class="modal-close">X</div>
+      </div>
+      <form action="" class="modal-form">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Subject">
+        <textarea class="message-input" name="message" id="" placeholder="Email Message"></textarea>
+        <button class="send-btn">Send message</button>
+      </form>
+      <div class="otherforms">
+        <a href="https://web.whatsapp.com/" class="whatsapp" target="_blanck">
+          <img src="../img/whatsapp.png" alt="Whatsapp icon">
+          <p>Contact me by whatsapp</p>
+        </a>
+        <a href="https://www.instagram.com/" class="instagram-dm" target="_blanck">
+          <img src="../img/instagram.png" alt="Instagram icon">
+          <p>Contact me by Instagram</p>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!--- ## Networks ## --->
   <div class="networks">
@@ -115,7 +141,7 @@
       <ul>
         <li><a href="index.html">Start</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="modal-contact" >Contact</a></li>
       </ul>
     </div>
     <div class="otros">
@@ -127,6 +153,7 @@
   </footer>
 
   <script src="../js/menu-btn.js"></script>
+  <script src="../js/modal-window.js"></script>
 </body>
 
 </html>
