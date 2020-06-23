@@ -8,7 +8,7 @@
   <title>José Padrón 💻️ Developer</title>
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
-  <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet" /> -->
 </head>
 
 <body>
@@ -34,7 +34,7 @@
             <a href="blog.html">Blog</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#" class="modal-contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -54,6 +54,32 @@
       <img src="../img/undraw_coding_6mjf.svg" alt="Banner">
     </div>
   </section>
+
+  <!--- ## Modal contact ## --->
+  <div class="modal-overley">
+    <div class="modal">
+      <div class="modal-title">
+        <h1>Contact me</h1>
+        <div class="modal-close">X</div>
+      </div>
+      <form action="" class="modal-form">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Subject">
+        <textarea class="message-input" name="message" id="" placeholder="Email Message"></textarea>
+        <button class="send-btn">Send message</button>
+      </form>
+      <div class="otherforms">
+        <a href="https://web.whatsapp.com/" class="whatsapp" target="_blanck">
+          <img src="../img/whatsapp.png" alt="Whatsapp icon">
+          <p>Contact me by whatsapp</p>
+        </a>
+        <a href="https://www.instagram.com/" class="instagram-dm" target="_blanck">
+          <img src="../img/instagram.png" alt="Instagram icon">
+          <p>Contact me by Instagram</p>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!--- ## Networks ## --->
   <div class="networks">
@@ -200,6 +226,7 @@
   </footer>
 
   <script src="../js/menu-btn.js"></script>
+  <script src="../js/modal-window.js"></script>
 </body>
 
 </html>
