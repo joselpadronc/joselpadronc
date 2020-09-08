@@ -17,5 +17,5 @@
 
 #### Contact me 
 - **padroncjosel@gmail.com**
-- [** Instagram: @joselpadronc **](http://instagram.com/joselpadronc "Instagram: @joselpadronc")
-- [** Twitter: @joselpadronc **](https://twitter.com/joselpadronc "Twitter: @joselpadronc"
+- [**Instagram: @joselpadronc**](http://instagram.com/joselpadronc "Instagram: @joselpadronc")
+- [**Twitter: @joselpadronc**](https://twitter.com/joselpadronc "Twitter: @joselpadronc")
