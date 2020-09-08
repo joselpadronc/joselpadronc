@@ -54,8 +54,14 @@ body {
 	padding: 15px 15px 0px 15px;
 }
 
+.projects-card h6 {
+	padding: 15px 15px 0px 15px;
+	font-size: 14px;
+}
+
 .projects-card p {
 	padding: 15px;
+	font-size: 14px;
 }
 
 .projects-card_content {
