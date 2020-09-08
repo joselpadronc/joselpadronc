@@ -1,15 +1,21 @@
-# MyWebsite
+<h1 align="center">Hi 👋, I'm José Padrón</h1>
 
-My personal website.
+<h4 align="center">Jr. Full-Stack Developer . Always trying to learn constantly 📚💻</h4>
+<p align="center">
+[![Twitter: joselpadronc](https://img.shields.io/twitter/follow/joselpadronc?style=social)](https://twitter.com/joselpadronc)
+  
+[![GitHub José](https://img.shields.io/github/followers/joselpadronc?label=follow&style=social)](https://github.com/joselpadronc)
+</p>
 
-[![LandingPage img](https://github.com/joselpadronc/MyWebsite/blob/master/img/Landing.png "LandingPage img")](http://https://github.com/joselpadronc/MyWebsite/blob/master/img/Landing.png "LandingPage img")
-
-### Used technologies
+### My Skills
 
 - HTML
 - CSS
 - JavaScript
 - Python with Flask
+- Python with Django
 
-
-**Designed and developed by José Padrón**
+#### Contact me 
+- **padroncjosel@gmail.com**
+- [** Instagram: @joselpadronc **](http://instagram.com/joselpadronc "Instagram: @joselpadronc")
+- [** Twitter: @joselpadronc **](https://twitter.com/joselpadronc "Twitter: @joselpadronc"
