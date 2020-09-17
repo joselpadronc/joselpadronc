@@ -325,8 +325,8 @@ html {
 
 .ts,
 .angular,
+.php,
 .node,
-.ruby,
 .go {
   display: flex;
   align-items: center;
@@ -335,8 +335,8 @@ html {
 
 .ts p,
 .angular p,
+.php p,
 .node p,
-.ruby p,
 .go p {
   font-size: 14px;
   font-weight: 600;
