@@ -5,6 +5,9 @@
   
  **[joselpadronc Web](https://joselpadronc.github.io/joselpadronc/html/index.html) &middot;**
 </p>
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=joselpadronc" alt="joselpadronc" /> </p>
+
   
 <p align="center">
   
