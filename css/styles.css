@@ -245,7 +245,7 @@ html {
   bottom: 12px;
 }
 
-.gitlab img,
+.linkedin img,
 .twitter img,
 .github img,
 .instagram img {
@@ -269,7 +269,7 @@ html {
   padding-top: 50px;
 }
 
-.skill-card {
+.skills-card {
   width: 100%;
   height: auto;
   margin-bottom: 50px;
@@ -278,72 +278,28 @@ html {
   box-shadow: 0px 0px 15px rgba(2, 33, 42, 0.1), 0px 4px 12px rgba(2, 33, 42, 0.2);
 }
 
-.skill-card h4 {
+.skills-card h4 {
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 15px;
-}
-
-.skill-card_content {
-  padding: 15px;
-}
-
-.skill-tech {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
   padding: 15px 0;
 }
 
-.loader {
-  border: 1px solid #09262f;
-  border-radius: 8px;
-  height: 12px;
+.skill-card_content {
+  padding: 15px 20px;
 }
 
-.loader-intern {
-  background-color: #0a8ecd;
-  border-radius: 8px;
-  width: 80%;
-  height: 12px;
-}
-
-.html,
-.css {
-  width: 98%;
-}
-
-.js {
-  width: 20%;
-}
-
-.flask,
-.django {
-  width: 80%;
-}
-
-.ts,
-.angular,
-.php,
-.node,
-.go {
+.skill-tech {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  width: 0%;
+  padding: 5px 0;
+  border: 1px solid #000;
+  border-radius: 8px;
 }
 
-.ts p,
-.angular p,
-.php p,
-.node p,
-.go p {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 10px;
-  letter-spacing: 1px;
+.skill-tech img {
+  width: 20px;
 }
-
 
 .elipse img {
   margin-bottom: -10px;
@@ -394,6 +350,11 @@ footer {
 }
 
 .otros ul li a {
+  color: #000;
+}
+
+.footer-email::after {
+  content: "padroncjosel@gmail.com";
   color: #000;
 }
 
