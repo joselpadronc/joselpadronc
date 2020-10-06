@@ -3,7 +3,7 @@
 
 <p align="center">
   
- **[joselpadronc Web](https://joselpadronc.github.io/joselpadronc/html/index.html) &middot;**
+ **[joselpadronc Web](https://joselpadronc.github.io/joselpadronc/index.html) &middot;**
 </p>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=joselpadronc" alt="joselpadronc" /> </p>
