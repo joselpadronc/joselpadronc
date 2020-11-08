@@ -36,4 +36,7 @@
 -  [**Instagram: @joselpadronc**](http://instagram.com/joselpadronc "Instagram: @joselpadronc")
 - [**Twitter: @joselpadronc**](https://twitter.com/joselpadronc "Twitter: @joselpadronc")
 
-![José Padrón github stats](https://github-readme-stats.vercel.app/api?username=joselpadronc&show_icons=true&hide_border=true)
+<p align="center">
+  <img width="50%" height="150px" src="https://github-readme-stats.vercel.app/api?username=joselpadronc&show_icons=true&hide_border=true" />  
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=joselpadronc&layout=compact" align="top" height="150px" width="45%" />
+</p>
