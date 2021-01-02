@@ -28,6 +28,7 @@
 - HTML <code><img height="20" src="https://github.com/joselpadronc/joselpadronc/blob/master/img/html.png"></code>
 - CSS <code><img height="20" src="https://github.com/joselpadronc/joselpadronc/blob/master/img/css3.png"></code>
 - JavaScript <code><img height="20" src="https://github.com/joselpadronc/joselpadronc/blob/master/img/javascript.png"></code>
+- React JS <code><img height="20" src="https://github.com/joselpadronc/joselpadronc/blob/master/img/reactjs.png"></code>
 - Node JS <code><img height="20" src="https://github.com/joselpadronc/joselpadronc/blob/master/img/nodejs.png"></code>
 - Python with Flask <code><img height="20" src="https://github.com/joselpadronc/joselpadronc/blob/master/img/python.png"></code>
 - Python with Django <code><img height="20" src="https://github.com/joselpadronc/joselpadronc/blob/master/img/django.png"></code>
