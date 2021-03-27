@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm José Padrón</h1>
-<h4 align="center">Jr. Backend Developer . Always trying to learn constantly 📚💻</h4>
+<h4 align="center">Jr. Frontend Developer . Always trying to learn constantly 📚💻</h4>
 
 <p align="center">
   
