@@ -35,7 +35,7 @@ class BlogpostCard extends HTMLElement {
                 border-radius: 8px;
                 margin-top: 15px;
                 padding: 15px;
-                box-shadow: 0px 8px 8px rgba(2, 33, 43, 0.1), 0px 4px 4px rgba(152, 152, 152, 0.2);
+                box-shadow: 0 2px 12px rgb(18 29 64 / 8%), 0 2px 8px rgb(18 29 64 / 12%);
             }
 
             .card-btn {

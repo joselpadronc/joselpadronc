@@ -1,22 +1,16 @@
+body {
+	background-color: #02212b;
+}
+
 /*-----## Section Projects ##-----*/
 .projects {
-	background-color: white;
+	background-color: #02212b;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	align-items: center;
+	justify-content: center;
 	padding: 15px 15px 45px 15px;
 	max-width: 1024px;
 	margin: 0 auto;
 	margin-bottom: 50px;
-}
-
-/*-----## Responsive Design ##-----*/
-@media screen and (min-width: 768px) {
-	.projects {
-		display: flex;
-		flex-wrap: wrap;
-		grid-gap: 25px;
-		padding: 15px 100px 45px 100px;
-	}
-
 }

@@ -36,10 +36,11 @@ class ProjectCard extends HTMLElement {
             .card {
                 background-color: #f3f8fb;
                 border-radius: 8px;
-                margin-top: 15px;
+                margin: 0 25px;
+                margin-top: 25px;
                 padding: 15px;
-                width: 250px;
-                box-shadow: 0px 8px 8px rgba(2, 33, 43, 0.1), 0px 4px 4px rgba(152, 152, 152, 0.2);
+                width: 230px;
+                height: 280px;
             }
 
             a {
@@ -50,6 +51,8 @@ class ProjectCard extends HTMLElement {
             .card img {
                 background-color: skyblue;
                 width: 100%;
+                height: 120px;
+                object-fit: cover;
                 border-radius: 8px;
             }
 
