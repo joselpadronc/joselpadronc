@@ -1,0 +1,18 @@
+/*-----## BlogPosts section ##-----*/
+.blogposts {
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+  padding: 15px 15px 45px 15px;
+}
+
+@media screen and (min-width: 1024px) {
+	.blogposts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 85px;
+    margin-top: 0px;
+  }
+
+}
