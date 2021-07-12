@@ -13,7 +13,6 @@ export default function BaseLayoutWeb({ title, children }) {
       <Head>
         <title>{title}</title>
         <link rel="icon" type="image/png" href="/img/meFavicon.png" />
-        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
       </Head>
       <Navbar />
       {children}
