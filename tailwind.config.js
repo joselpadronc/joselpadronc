@@ -7,11 +7,20 @@ module.exports = {
       ...theme('colors'),
       'primary': '#19BFAB',
       'secondary': '#0E2137',
+      'primary-blue': '#0490AE',
+      'light-white': '#FAFCFD',
+      'light-gray': '#EFF3F8',
     }),
     borderColor: theme => ({
       ...theme('colors'),
       'primary': '#19BFAB',
       'secondary': '#0E2137',
+      'primary-blue': '#0490AE',
+    }),
+    gradientColorStops: theme => ({
+      ...theme('colors'),
+      'light-white': '#FAFCFD',
+      'light-gray': '#EFF3F8',
     }),
     extend: {
       backgroundImage: theme => ({

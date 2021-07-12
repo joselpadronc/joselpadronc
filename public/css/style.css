@@ -1,0 +1,9 @@
+.carrousel::-webkit-scrollbar {
+  background: rgba(31, 31, 31, 0.2);
+  margin-bottom: 50px;
+  height: 6px;
+}
+
+.carrousel::-webkit-scrollbar-thumb {
+  background: rgba(70, 216, 162, 0.4);
+}
