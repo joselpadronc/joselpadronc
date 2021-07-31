@@ -1,14 +1,28 @@
-import Link from 'next/link'
+import fetch from 'isomorphic-fetch'
 
 // Components and Layouts
-import BaseLayoutWeb from '../layouts/BaseLayoutWeb'
-import PrimaryBtn from '../components/PrimaryBtn'
-import ProjectCard from '../components/ProjectCard'
+import BaseLayoutWeb from '@/layouts/BaseLayoutWeb'
+import PrimaryBtn from '@/components/PrimaryBtn'
+import ProjectCard from '@/components/ProjectCard'
 
+const BASE_URL = 'https://myapi-joselpadronc.herokuapp.com/projects?_limit=3&_sort=published_at:DESC'
 
-export default function Home() {
+export async function getServerSideProps() {
+
+  const response = await fetch(BASE_URL)
+  const data = await response.json()
+
+  return {
+    props: {
+      projectsList: data
+    }
+  }
+
+}
+
+export default function Home({ projectsList }) {
   return (
-    <BaseLayoutWeb title="Joselpadronc | Web">
+    <BaseLayoutWeb title="Web">
       {/* Hero */}
       <main className="w-full pt-10 pb-16 md:pt-5 bg-secondary">
         <div className="container mx-auto mt-10 flex flex-col items-center justify-center md:mt-20">
@@ -16,7 +30,7 @@ export default function Home() {
             <img src="/img/me.jpg" alt="Me Picture" width={200} height={200} className="rounded-full"/>
           </figure>
           <h1 className="text-2xl font-semibold text-white">!Hola¡ Soy José Padron</h1>
-          <h4 className="text-lg text-center mt-5 max-w-2xl text-white">Desarrollador Frontend constantemente aprendiendo y conociendo nuevas tecnologías</h4>
+          <h4 className="text-lg text-center mt-5 max-w-2xl text-white">Desarrollador Web constantemente aprendiendo y conociendo nuevas tecnologías</h4>
           <PrimaryBtn textBtn="Descargar CV" routeBtn="/CV.pdf" targetBtn="_blank" />
         </div>
       </main>
@@ -59,27 +73,18 @@ export default function Home() {
       <section className="bg-light-gray to-bg-light-gray w-full pb-10 flex flex-col items-center">
         <h2 className="text-2xl font-semibold text-center text-gray-800 mb-4">Ultimos Proyectos</h2>
         <div className="container mx-auto pt-5 pb-10 flex flex-col items-center justify-center md:flex-row gap-8">
-          <ProjectCard
-            cardImg='https://via.placeholder.com/600/771796'
-            cardTitle="Trippy App"
-            cardTecnologies="Flutter"
-            cardUrlCode="https://github.com/joselpadronc/trippy_app"
-            cardUrlProject="https://github.com/joselpadronc/trippy_app/blob/main/README.md"
-          />
-          <ProjectCard
-            cardImg='https://via.placeholder.com/600/771796'
-            cardTitle="Mi sitio web"
-            cardTecnologies="JavaScript, Next.js, Tailwind css"
-            cardUrlCode="https://github.com/joselpadronc/joselpadronc"
-            cardUrlProject="https://joselpadronc.vercel.app/"
-          />
-          <ProjectCard
-            cardImg='https://via.placeholder.com/600/771796'
-            cardTitle="Corn Flix"
-            cardTecnologies="HTML, CSS, JavaScript, React.js"
-            cardUrlCode="https://github.com/joselpadronc/corn-flix"
-            cardUrlProject="https://cornflix-joselpadronc.vercel.app/"
-          />
+          {
+            projectsList.map((project) => (
+              <ProjectCard
+                key={project.id}
+                cardImg={project.image.url}
+                cardTitle={project.name}
+                cardTecnologies={project.technologies}
+                cardUrlCode={project.link_code}
+                cardUrlProject={project.link}
+              />
+            ))
+          }
         </div>
         <PrimaryBtn textBtn="Ver Todos" routeBtn="/portafolio" targetBtn="" />
       </section>

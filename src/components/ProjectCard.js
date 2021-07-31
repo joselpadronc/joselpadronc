@@ -1,10 +1,28 @@
+import Image from 'next/image'
+
+
 export default function ProjectCard({ cardImg, cardTitle, cardTecnologies, cardUrlCode, cardUrlProject }) {
   return(
     <article className="p-3 flex flex-col items-start justify-between bg-white rounded-lg shadow-lg w-64">
-      <img src={cardImg} className="rounded-lg h-48 w-full mb-4" />
-      <div className="mb-5 w-full">
+      <Image
+        src='/img/sin_imagen.jpg'
+        className="rounded-lg h-48 w-full animate-pulse"
+        alt={cardTitle}
+        width={300}
+        height={250}
+        blurDataURL='/img/sin_imagen.jpg'
+        placeholder="blur"/>
+      <div className="mb-5 mt-2 w-full">
         <h4 className="text-xl font-semibold text-gray-700 mb-2 truncate">{cardTitle}</h4>
-        <p className="text-sm text-gray-800 truncate">{cardTecnologies}</p>
+        <p className="text-sm text-gray-800 truncate">
+          {
+            cardTecnologies.map((technology, index) => (
+              index === cardTecnologies.length - 1
+                ?`${technology.name}`
+                :`${technology.name}, `
+            ))
+          }
+        </p>
       </div>
       <div className="flex items-center gap-2 w-full">
         <a

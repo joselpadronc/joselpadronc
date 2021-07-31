@@ -7,7 +7,7 @@ import InstagramIcon from '@material-ui/icons/Instagram'
 export default function NetworksNav() {
 
   return (
-    <nav className="fixed px-5 py-3 bottom-2 bg-white shadow-xl rounded-lg w-11/12 max-w-xs">
+    <nav className="fixed px-5 py-3 inset-x-0 mx-auto bottom-2 bg-white shadow-xl rounded-lg w-11/12 max-w-xs">
       <menu className="p-0 m-0 flex items-center justify-between">
         <a className="p-0 m-0 pointer" href="https://github.com/joselpadronc" target="_blank">
           <GitHubIcon />
