@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import fetch from 'isomorphic-fetch'
 import {lastProjectsUrl} from '@/config'
 
@@ -26,7 +27,16 @@ export default function Home({ projectsList }) {
       <main className="w-full pt-10 pb-16 md:pt-5 bg-secondary">
         <div className="container mx-auto mt-10 flex flex-col items-center justify-center md:mt-20">
           <figure className="rounded-full flex flex-col items-center justify-center mb-10 border-4 border-primary transition duration-500 ease-in-out hover:border-green-500">
-            <img src="/img/me.jpg" alt="Me Picture" width={200} height={200} className="rounded-full"/>
+          <Image
+            alt="Me Picture"
+            className="rounded-full"
+            width={250}
+            height={250}
+            objectFit="cover"
+            objectPosition="center"
+            blurDataURL='/img/me.jpg'
+            placeholder="blur"
+            src='/img/me.jpg'/>
           </figure>
           <h1 className="text-2xl font-semibold text-white">!Hola¡ Soy José Padron</h1>
           <h4 className="text-lg text-center mt-5 max-w-2xl text-white">Desarrollador Web constantemente aprendiendo y conociendo nuevas tecnologías</h4>

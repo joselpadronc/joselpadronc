@@ -5,13 +5,15 @@ export default function ProjectCard({ cardImg, cardTitle, cardTecnologies, cardU
   return(
     <article className="p-3 flex flex-col items-start justify-between bg-white rounded-lg shadow-lg w-64">
       <Image
-        src='/img/sin_imagen.jpg'
-        className="rounded-lg h-48 w-full animate-pulse"
         alt={cardTitle}
+        className="rounded-lg h-48 w-full animate-pulse"
         width={300}
         height={250}
+        objectFit="cover"
+        objectPosition="center"
         blurDataURL='/img/sin_imagen.jpg'
-        placeholder="blur"/>
+        placeholder="blur"
+        src='/img/sin_imagen.jpg'/>
       <div className="mb-5 mt-2 w-full">
         <h4 className="text-xl font-semibold text-gray-700 mb-2 truncate">{cardTitle}</h4>
         <p className="text-sm text-gray-800 truncate">

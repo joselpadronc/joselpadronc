@@ -12,8 +12,8 @@ export default function Navbar() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-secondary shadow-lg w-full h-14">
-      <nav className="container my-auto mx-auto px-5 py-3 flex items-center justify-between z-50 md:py-0">
+    <header className="fixed top-0 left-0 right-0 bg-secondary shadow-lg w-full h-14 z-40">
+      <nav className="container my-auto mx-auto px-5 py-3 flex items-center justify-between md:py-0">
         <Link href="/">
           <h1 className="text-xl text-white font-semibold">Joselpadonc</h1>
         </Link>
