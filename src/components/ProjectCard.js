@@ -24,7 +24,7 @@ export default function ProjectCard({ cardImg, cardTitle, cardTecnologies, cardU
           }
         </p>
       </div>
-      <div className="flex items-center gap-2 w-full">
+      <div className="flex items-center gap-2 justify-between w-full">
         <a
           href={cardUrlCode}
           className="py-1 px-4 bg-white w-28 text-center border-4 border-primary-blue rounded-lg font-semibold text-sm text-gray-700"

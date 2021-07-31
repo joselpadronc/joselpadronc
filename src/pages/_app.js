@@ -1,7 +1,9 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 
+// Styles
 import 'tailwindcss/tailwind.css'
+import '@/customStyles.css'
 
 import ProgressBar from '@/components/ProgressBar'
 

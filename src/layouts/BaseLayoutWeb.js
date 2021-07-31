@@ -9,14 +9,12 @@ import Footer from '@/components/Footer'
 
 export default function BaseLayoutWeb({ title, children }) {
   return (
-    <main>
+    <main className="flex flex-col justify-center	items-center">
       <Head>
         <title>Joselpadronc | {title}</title>
       </Head>
       <Navbar />
-      <div className="h-full flex flex-col justify-center	items-center transition duration-500 ease-in-out">
-        {children}
-      </div>
+      {children}
       <NetworksNav />
       <Footer />
     </main>

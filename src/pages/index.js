@@ -35,11 +35,11 @@ export default function Home({ projectsList }) {
         </div>
       </main>
       {/* Habilidades */}
-      <section className="pt-16 pb-24 bg-gradient-to-b from-light-white to-light-gray w-full">
+      <section className="pt-16 pb-24 bg-gradient-to-b from-light-white to-light-gray w-full px-4">
         <div className="container mx-auto">
           <h2 className="text-2xl font-semibold text-center text-gray-800 mb-8">Habilidades y Aptitudes</h2>
           <div className="flex flex-col items-center md:items-start justify-center gap-10 md:flex-row px-4 md:px-0">
-            <article className="py-4 px-6 bg-white shadow-md overflow-x-auto rounded-lg carrousel">
+            <article className="py-4 px-6 bg-white shadow-md overflow-x-auto rounded-lg">
               <div className="w-full flex flex-row gap-4">
                 <img src="/img/icons8-html-5-100.png" alt="..."/>
                 <img src="/img/icons8-css3-100.png" alt="..."/>
@@ -70,9 +70,9 @@ export default function Home({ projectsList }) {
         </div>
       </section>
       {/* Proyectos */}
-      <section className="bg-light-gray to-bg-light-gray w-full pb-10 flex flex-col items-center">
+      <section className="bg-light-gray to-bg-light-gray w-full pb-10 flex flex-col items-center px-4">
         <h2 className="text-2xl font-semibold text-center text-gray-800 mb-4">Ultimos Proyectos</h2>
-        <div className="container mx-auto pt-5 pb-10 flex flex-col items-center justify-center md:flex-row gap-8">
+        <div className="container mx-auto pt-5 pb-10 flex flex-col items-center justify-start md:flex-row lg:justify-center gap-8 overflow-x-auto">
           {
             projectsList.map((project) => (
               <ProjectCard
