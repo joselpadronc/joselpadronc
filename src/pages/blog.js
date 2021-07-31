@@ -1,4 +1,5 @@
 import fetch from 'isomorphic-fetch'
+import {postsUrl} from '@/config'
 
 // Layouts
 import BaseLayoutWeb from '@/layouts/BaseLayoutWeb'
@@ -6,11 +7,9 @@ import BaseLayoutWeb from '@/layouts/BaseLayoutWeb'
 // Components
 import PostCard from '@/components/PostCard'
 
-const BASE_URL = 'https://myapi-joselpadronc.herokuapp.com/posts?_sort=published_at:DESC'
-
 export async function getServerSideProps() {
 
-  const response = await fetch(BASE_URL)
+  const response = await fetch(postsUrl)
   const data = await response.json()
 
   return {

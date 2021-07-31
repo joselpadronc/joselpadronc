@@ -1,15 +1,14 @@
 import fetch from 'isomorphic-fetch'
+import {lastProjectsUrl} from '@/config'
 
 // Components and Layouts
 import BaseLayoutWeb from '@/layouts/BaseLayoutWeb'
 import PrimaryBtn from '@/components/PrimaryBtn'
 import ProjectCard from '@/components/ProjectCard'
 
-const BASE_URL = 'https://myapi-joselpadronc.herokuapp.com/projects?_limit=3&_sort=published_at:DESC'
-
 export async function getServerSideProps() {
 
-  const response = await fetch(BASE_URL)
+  const response = await fetch(lastProjectsUrl)
   const data = await response.json()
 
   return {
