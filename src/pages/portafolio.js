@@ -31,7 +31,7 @@ export default function Portafolio({ projectsList }) {
               projectsList.map((project) => (
                 <ProjectCard
                   key={project.id}
-                  cardImg={project.image.url}
+                  cardImg={project.image}
                   cardTitle={project.name}
                   cardTecnologies={project.technologies}
                   cardUrlCode={project.link_code}
