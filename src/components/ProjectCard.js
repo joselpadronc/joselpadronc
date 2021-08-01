@@ -18,7 +18,7 @@ export default function ProjectCard({ cardImg, cardTitle, cardTecnologies, cardU
         <h4 className="text-xl font-semibold text-gray-700 mb-2 truncate">{!cardTitle ? 'Titulo': cardTitle}</h4>
         <p className="text-sm text-gray-800 truncate">
           {
-            !cardTecnologies
+            cardTecnologies
               ? cardTecnologies.map((technology, index) => (
                 index === cardTecnologies.length - 1
                   ?`${technology.name}`
