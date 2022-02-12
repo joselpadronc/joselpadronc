@@ -31,8 +31,6 @@
 - React JS
 - Node JS
 - Next JS
-- Python with Flask
-- Python with Django
 - PHP with Laravel
 
 #### Contact me 
